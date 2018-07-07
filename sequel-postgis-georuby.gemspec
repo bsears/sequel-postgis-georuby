@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'sequel-postgis-georuby'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.date        = '2018-07-01'
   s.summary     = "Minimal gem for working with Postgis data in Sequel"
   s.description = "A gem to convert Postgis geometry columns to GeoRuby Simple Features in Sequel."
@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rspec', '~> 3.0'
 
-  s.files       = [ "lib/postgis_georuby.rb",
+  s.files       = [ "lib/sequel-postgis-georuby.rb",
                     'lib/georuby/geometry_literal.rb',
                     "lib/sequel/extensions/postgis_georuby.rb"
                   ]

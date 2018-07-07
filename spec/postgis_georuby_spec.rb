@@ -1,5 +1,5 @@
 $:.unshift(File.join(File.dirname(File.expand_path(__FILE__)), "../lib/"))
-require 'postgis_georuby'
+require 'sequel-postgis-georuby'
 
 describe "postgis_georuby extension" do
   before do
