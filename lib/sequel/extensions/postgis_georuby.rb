@@ -1,3 +1,4 @@
+require_relative '../../georuby/geometry_literal'
 module Sequel
   module PostgisGeoRuby
     module DatabaseMethods
@@ -8,10 +9,6 @@ module Sequel
           hex_ewkb_parser = ::GeoRuby::SimpleFeatures::HexEWKBParser.new(factory)
           georuby_conversion_proc = lambda{|v| hex_ewkb_parser.parse(v);factory.geometry}
 
-          #{ 'geometry' => ::GeoRuby::SimpleFeatures::Geometry,
-          #  'geography' => ::GeoRuby::SimpleFeatures::Geometry }.each do #|geom_type, geom_class|
-          #  add_named_conversion_proc(geom_type, &georuby_conversion_proc)
-          #  @schema_type_classes[geom_type] = geom_class
           ['geometry', 'geography'].each do |geom_type|
             add_named_conversion_proc(geom_type, &georuby_conversion_proc)
           end
