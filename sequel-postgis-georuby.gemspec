@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'sequel-postgis-georuby'
-  s.version     = '0.1.1'
+  s.version     = '0.1.2'
   s.date        = '2018-07-01'
   s.summary     = "Minimal gem for working with Postgis data in Sequel"
   s.description = "A gem to convert Postgis geometry columns to GeoRuby Simple Features in Sequel."
