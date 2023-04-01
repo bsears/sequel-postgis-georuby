@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "A gem to convert Postgis geometry columns to GeoRuby Simple Features in Sequel."
   s.authors     = ["Barry Sears"]
   s.email       = 'barry.sears@gmail.com'
-  s.required_ruby_version = '~> 2.0'
+  s.required_ruby_version = '> 2.0'
   s.add_dependency 'sequel', '~> 5.0'
   s.add_dependency 'georuby', '~> 2.5.2'
 
